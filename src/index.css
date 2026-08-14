@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb; /* Blue */
+  --color-success: #16a34a; /* Green */
+  --color-error: #dc2626;   /* Red */
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #0f172a;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --sidebar: #f8fafc;
+    --border: #e2e8f0;
+  }
+  .dark {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --sidebar: #1e293b;
+    --border: #334155;
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300;
+  }
+}

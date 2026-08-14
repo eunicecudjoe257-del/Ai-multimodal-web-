@@ -1,0 +1,6 @@
+{
+  "name": "Multi-AI Chat",
+  "description": "A modern, multi-AI chat application with support for multiple providers, plans, and plugins.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
